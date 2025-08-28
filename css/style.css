@@ -1,34 +1,173 @@
-body{
-    font-size:10px;
+/* 변수선언하기 */
+:root {
+    --main-color: #05183B;
 }
 
-header{
-    background:skyblue;
-    max-width:100%;
+
+header {
+    /* 헤더 높이를 80px설정 */
     height: 80px;
+    background: #fff;
+    color: #555;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.inner {
+    max-width: 1560px;
+    /* 로고,gnb 가운데로 정렬하기 위해 높이 100%*/
+    height: 100%;
+    margin: 0 auto;
+    /* background: rgba(255, 0, 0, 0.3); */
+}
+
+header .inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.main-menu{
+.logo {
+    width: 140px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.main-menu {
+    display: flex;
+    gap: 300px;
+
+}
+
+.main-menu-list {
+    display: flex;
+    text-align: center;
+    gap: 96px;
+    font-size: 18px;
+}
+
+.gnb>.log{
     display:flex;
-    font-size:1.8rem;
+    gap:10px;
+}
+.gnb>.log li{
+    padding-left:10px;
+    position: relative;
 }
 
-.gnb{
-    display:flex;
+.gnb>.log li:last-child:after{
+    content: "";
+    width:1px;
+    height:15px;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+    background-color:#ccc;
 }
 
-footer{
-    background-color: bisque;
+.main-menu .search {
+    display: flex;
+    align-items: center;
+    /* 세로 가운데 정렬 */
+    gap: 10px;
+    /* 간격 조절 */
 }
 
-.footer-top{
-    display:flex;
-    justify-content:space-between;
+.gnb {
+    display: flex;
+    gap: 40px;
+    font-size:16px;
 }
 
-.footer-top .site-map{
-    display:flex;
-    font-size:1.6rem
+.search input {
+    height: 30px;
+    padding: 5px 10px;
 }
+
+.search a img {
+    width: 24px;
+    height: 24px;
+    line-height: center;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+}
+
+.lage {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    height: 700px;
+    background-color: rgb(248, 237, 212);
+}
+
+
+
+/* footer */
+
+footer {
+    background-color: var(--main-color);
+}
+
+
+footer .inner {
+    color: #fff;
+    height:470px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top:50px;
+}
+
+.footer-top .site-map {
+    display: flex;
+    gap: 120px;
+}
+
+.footer-top strong{
+    display: block;
+    font-size:18px;
+    margin-bottom: 25px;
+    background-color: tomato;
+}
+
+.footer-top .depth{
+    /* 줄간격 */
+    font-size:16px;
+    line-height: 2.5;
+    margin-top:10px;
+}
+
+.footer-top .cus-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/* 
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    /* 세로 가운데 정렬 */
+    justify-content: space-between;
+    /* 간격 띄우고 싶으면 시작-끝 일정한 간격으로
+    떨어지기 */
+    gap: 30px;
+    /* 요소 사이 간격 */
+}
+
+.footer-bottom address,
+ {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ */
