@@ -1,0 +1,34 @@
+body{
+    font-size:10px;
+}
+
+header{
+    background:skyblue;
+    max-width:100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu{
+    display:flex;
+    font-size:1.8rem;
+}
+
+.gnb{
+    display:flex;
+}
+
+footer{
+    background-color: bisque;
+}
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-top .site-map{
+    display:flex;
+    font-size:1.6rem
+}
