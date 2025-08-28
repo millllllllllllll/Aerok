@@ -110,64 +110,121 @@ main {
 
 
 
-/* footer */
-
+/* footer 공통 */
 footer {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 14px;
+  /* line-height  줄간격 */
+  line-height: 2.0;
 }
-
 
 footer .inner {
-    color: #fff;
-    height:470px;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
+
 
 .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* 사이트맵 */
+.site-map {
+    max-width: 1000px; 
     display: flex;
     justify-content: space-between;
-    padding-top:50px;
+    padding: 20px;
 }
 
-.footer-top .site-map {
-    display: flex;
-    gap: 120px;
+
+.site-map li strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-.footer-top strong{
-    display: block;
-    font-size:18px;
-    margin-bottom: 25px;
-    background-color: tomato;
+.site-map .depth {
+    width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.footer-top .depth{
-    /* 줄간격 */
-    font-size:16px;
-    line-height: 2.5;
-    margin-top:10px;
+.site-map .depth li a {
+  color: #ccc;
+  font-size: 14px;
+  transition: color 0.2s;
 }
 
+
+/* 고객센터 박스 */
 .footer-top .cus-info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-/* 
-.footer-bottom {
-    display: flex;
-    align-items: center;
-    /* 세로 가운데 정렬 */
-    justify-content: space-between;
-    /* 간격 띄우고 싶으면 시작-끝 일정한 간격으로
-    떨어지기 */
-    gap: 30px;
-    /* 요소 사이 간격 */
+    align-items: flex-start;
+    gap: 6px;
+    color: #fff;
 }
 
-.footer-bottom address,
- {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+/* 고객센터 타이틀 */
+.footer-top .cus-info strong {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ccc;   /* 연한 회색 */
+    margin-bottom: 5px;
 }
- */
+
+/* 대표 전화번호 */
+.footer-top .cus-info p:first-of-type {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 5px 0;
+    color: #fff;
+}
+
+/* 영업시간 */
+.footer-top .cus-info p:nth-of-type(2) {
+    font-size: 13px;
+    color: #ccc;
+    display: flex;
+    gap: 6px;
+}
+
+/* 해외연락 */
+.footer-top .cus-info span:last-of-type {
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 3px;
+}
+
+/* 고객문의 버튼 */
+.footer-top .cus-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+/* footer-bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo-bottom img {
+  width: 120px;
+  opacity: 0.8;
+}
